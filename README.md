@@ -89,6 +89,145 @@ Sem entrega contínua, o processo de levar uma nova versão do software até o u
 - Maior capacidade de resposta a falhas, pois reverter uma mudança pequena é mais simples
 
 ---
+## 9. Infraestrutura como Código (IaC)
+
+### O que é
+
+Infraestrutura como Código (*Infrastructure as Code* – IaC) é a prática de gerenciar e provisionar recursos computacionais, como servidores, redes, máquinas virtuais e bancos de dados, utilizando código em vez de configurações e processos manuais.
+
+Com essa abordagem, a infraestrutura pode ser criada, modificada e replicada de forma automatizada, garantindo maior consistência entre os ambientes e reduzindo erros causados por configurações manuais. Além disso, o IaC facilita o trabalho das equipes de desenvolvimento e operações, tornando o processo de implantação mais rápido, seguro e eficiente.
+
+### Por que é importante
+
+O uso de IaC é importante para o escalamento de aplicações, principalmente as de grande porte, pois automatiza um processo que normalmente é demorado, complexo e propenso a erros. Entre seus principais benefícios, destacam-se:
+
+- **Consistência e conformidade**
+
+Ao utilizar código para gerenciar e provisionar a infraestrutura, é possível aplicar a mesma configuração em diferentes ambientes, como desenvolvimento, testes e produção. Isso garante maior consistência entre os ambientes e facilita o gerenciamento da infraestrutura.
+
+- **Eficiência e redução de erros de configuração**
+
+A configuração manual está sujeita a falhas devido à intervenção humana. Com o uso da IaC, esse processo é automatizado, reduzindo erros e tornando a implantação mais rápida e confiável. Além disso, como o código pode ser versionado, é possível corrigir problemas rapidamente ou restaurar versões anteriores da infraestrutura quando necessário.
+
+- **Escalabilidade**
+
+Com a Infraestrutura como Código, é possível criar ou expandir ambientes de forma rápida e automatizada. Isso facilita o crescimento das aplicações conforme aumenta a demanda, sem a necessidade de configurar novos recursos manualmente.
+
+### Como funciona na prática
+
+Na prática, a Infraestrutura como Código (IaC) utiliza arquivos de configuração escritos em linguagens específicas para definir toda a infraestrutura necessária para uma aplicação. Esses arquivos descrevem recursos como servidores, redes, bancos de dados e máquinas virtuais.
+
+Além disso, as ferramentas de IaC podem utilizar duas abordagens principais:
+
+- **Declarativa:** o desenvolvedor descreve o estado final desejado da infraestrutura, enquanto a ferramenta define como alcançá-lo.
+- **Imperativa:** o desenvolvedor especifica todas as etapas necessárias para criar e configurar a infraestrutura.
+
+Independentemente da abordagem utilizada, o processo geralmente ocorre da seguinte forma:
+
+1. O desenvolvedor cria ou altera um arquivo de configuração da infraestrutura.
+2. Uma ferramenta de IaC analisa esse arquivo e identifica quais recursos devem ser criados, modificados ou removidos.
+3. As alterações são aplicadas automaticamente no ambiente.
+4. Caso seja necessário recriar a infraestrutura em outro ambiente, basta utilizar o mesmo arquivo de configuração, garantindo que todas as configurações sejam reproduzidas de forma consistente.
+
+Abaixo está um exemplo simples utilizando Terraform para criar uma instância na AWS:
+
+```hcl
+resource "aws_instance" "servidor_web" {
+  ami           = "ami-1234567890abcdef0"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "ServidorWeb"
+  }
+}
+```
+
+Nesse exemplo, o desenvolvedor define por meio de código uma instância da AWS, informando a imagem (AMI), o tipo da máquina e uma identificação. Ao executar o Terraform, a infraestrutura é criada automaticamente de acordo com essa configuração, sem a necessidade de realizar todas as etapas manualmente.
+
+### Benefícios
+
+- **Automação da infraestrutura:** reduz a necessidade de configurações manuais, tornando o processo mais rápido e eficiente.
+
+- **Consistência entre ambientes:** garante que ambientes de desenvolvimento, testes e produção possuam a mesma configuração, reduzindo incompatibilidades.
+
+- **Redução de erros:** minimiza falhas causadas por configurações manuais, aumentando a confiabilidade da infraestrutura.
+
+- **Escalabilidade:** permite criar, modificar ou expandir recursos de infraestrutura de forma rápida conforme a demanda da aplicação.
+
+- **Versionamento da infraestrutura:** como a infraestrutura é definida por código, é possível acompanhar alterações, restaurar versões anteriores e facilitar auditorias.
+
+---
+## 10. Principais ferramentas utilizadas no mercado
+
+### Introdução
+
+O DevOps utiliza diversas ferramentas para automatizar processos, integrar equipes e tornar o desenvolvimento de software mais ágil e confiável. Cada ferramenta desempenha uma função específica, como controle de versão, integração e entrega contínua (CI/CD), gerenciamento de infraestrutura, criação de containers e monitoramento de aplicações.
+
+A seguir, estão apresentadas algumas das principais ferramentas utilizadas no mercado e suas respectivas finalidades.
+
+### Controle de versão
+
+As ferramentas de controle de versão (Version Control Systems – VCS) são a base do DevOps, pois permitem registrar, gerenciar e acompanhar as alterações realizadas no código-fonte ao longo do desenvolvimento. Além disso, facilitam a colaboração entre os membros da equipe, o controle de versões e a recuperação de alterações quando necessário.
+
+As principais ferramentas utilizadas são:
+
+- **Git:** sistema de controle de versão distribuído que registra o histórico das alterações no código e permite que vários desenvolvedores trabalhem no mesmo projeto simultaneamente.
+
+- **GitHub:** plataforma de hospedagem de repositórios Git que oferece recursos para colaboração, revisão de código, gerenciamento de projetos e automação com GitHub Actions.
+
+- **GitLab:** plataforma semelhante ao GitHub, que além de hospedar repositórios Git, disponibiliza ferramentas integradas para CI/CD, gerenciamento de projetos e monitoramento do ciclo de desenvolvimento.
+
+### CI/CD (Integração Contínua e Entrega Contínua)
+
+As ferramentas de CI/CD (Integração Contínua e Entrega Contínua) desempenham um papel fundamental no DevOps, pois automatizam diversas etapas do desenvolvimento de software, desde a integração do código até a execução de testes e a implantação da aplicação.
+
+Além de reduzir tarefas manuais, essas ferramentas aceleram o processo de desenvolvimento, diminuem a ocorrência de erros humanos e facilitam a colaboração entre as equipes de desenvolvimento e operações.
+
+As principais ferramentas de CI/CD são:
+
+- **Jenkins:** ferramenta de automação de código aberto amplamente utilizada para criar pipelines de integração e entrega contínua.
+
+- **GitHub Actions:** serviço integrado ao GitHub que permite automatizar testes, builds e implantações diretamente nos repositórios.
+
+- **GitLab CI/CD:** solução integrada ao GitLab para automatizar pipelines de desenvolvimento, testes e implantação de aplicações.
+
+### Containers e Orquestração de Containers
+
+As tecnologias de containers e orquestração de containers são amplamente utilizadas no DevOps, pois permitem empacotar aplicações com todas as suas dependências e executá-las de forma consistente em diferentes ambientes. Além disso, a orquestração facilita o gerenciamento dessas aplicações, automatizando tarefas como implantação, escalabilidade e recuperação de falhas.
+
+As principais ferramentas dessa categoria são:
+
+- **Docker:** plataforma que permite criar, executar e gerenciar aplicações em containers, garantindo que funcionem da mesma forma em diferentes ambientes.
+
+- **Kubernetes:** plataforma de orquestração de containers que automatiza a implantação, o gerenciamento, o balanceamento de carga e a escalabilidade de aplicações em ambientes distribuídos.
+
+### Infraestrutura como Código (IaC)
+
+As ferramentas de Infraestrutura como Código (*Infrastructure as Code* – IaC) são essenciais para gerenciar e provisionar a infraestrutura de aplicações por meio de código, substituindo configurações manuais. Essa abordagem facilita o gerenciamento dos ambientes, aumenta a escalabilidade das aplicações e garante maior consistência entre os ambientes de desenvolvimento, testes e produção.
+
+As principais ferramentas de IaC são:
+
+- **Terraform:** ferramenta de código aberto utilizada para criar, modificar e gerenciar infraestrutura em diferentes provedores de nuvem por meio de arquivos de configuração.
+
+- **Ansible:** ferramenta de automação utilizada para configuração de servidores, gerenciamento de infraestrutura e implantação de aplicações, permitindo executar tarefas de forma padronizada e automatizada.
+
+### Monitoramento
+
+Ferramentas de monitoramento são essenciais para acompanhar o funcionamento e a disponibilidade das aplicações em tempo real. Elas permitem identificar falhas, verificar o desempenho dos sistemas e entender por quanto tempo uma aplicação ficou indisponível, além de auxiliar na investigação das causas dos problemas.
+
+Essas ferramentas ajudam as equipes de desenvolvimento e operações a manter a confiabilidade dos sistemas e a agir rapidamente em caso de incidentes.
+
+As principais ferramentas de monitoramento são:
+
+- **Prometheus:** ferramenta de monitoramento e coleta de métricas em tempo real, amplamente utilizada para observar o desempenho de sistemas e aplicações.
+
+- **Grafana:** ferramenta de visualização de dados que permite criar dashboards interativos a partir das métricas coletadas por sistemas como o Prometheus.
+
+### Resumo
+
+As ferramentas apresentadas são algumas das mais utilizadas no ecossistema DevOps e desempenham papéis complementares no ciclo de desenvolvimento de software. Elas permitem automatizar processos, melhorar a colaboração entre equipes, aumentar a confiabilidade das aplicações e garantir entregas mais rápidas e consistentes.
+
+---
 
 ## Diagrama Simplificado do Ciclo DevOps
 
