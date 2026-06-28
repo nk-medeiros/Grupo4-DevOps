@@ -68,6 +68,43 @@ empresas.
 
 ---
 
+## 3. Problemas que o profissional de DevOps busca resolver
+
+O profissional de DevOps atua na resolução de problemas relacionados à integração entre o desenvolvimento de software e as operações de infraestrutura, com o objetivo de tornar os processos mais eficientes, seguros e confiáveis. Entre os principais desafios enfrentados estão a demora na entrega de novas funcionalidades, a elevada incidência de erros durante implantações, a dependência de processos manuais, a falta de padronização entre os ambientes de desenvolvimento, testes e produção e a dificuldade em identificar e corrigir falhas rapidamente.
+
+Além disso, esse profissional busca minimizar problemas de comunicação entre equipes, que frequentemente resultam em retrabalho, atrasos e conflitos de responsabilidade. Para enfrentar essas dificuldades, o DevOps implementa práticas de automação, integração e entrega contínuas, monitoramento de aplicações e gerenciamento da infraestrutura como código, reduzindo a ocorrência de falhas humanas, aumentando a disponibilidade dos sistemas e permitindo que as atualizações sejam realizadas com maior frequência e menor risco. Dessa forma, seu trabalho está diretamente voltado para garantir maior agilidade, estabilidade e qualidade na entrega de software, alinhando as necessidades do negócio à eficiência operacional.
+
+# Como o DevOps resolve esses problemas
+
+## O DevOps utiliza práticas como:
+
+- Integração Contínua (CI) para integrar alterações de código com frequência.
+- Entrega e Implantação Contínuas (CD) para automatizar a disponibilização de novas versões.
+- Automação de testes, infraestrutura e deploy.
+- Monitoramento contínuo para identificar problemas rapidamente.
+- Colaboração entre equipes, eliminando barreiras entre desenvolvimento, operações e qualidade.
+
+---
+
+## 4. Integração entre desenvolvimento e operações
+
+A integração entre desenvolvimento e operações é um dos princípios fundamentais do **DevOps** e consiste na colaboração contínua entre as equipes responsáveis pela criação, implantação e manutenção de sistemas. Tradicionalmente, os desenvolvedores concentravam-se na implementação de novas funcionalidades, enquanto as equipes de operações eram responsáveis por garantir a estabilidade e a disponibilidade dos ambientes de produção. Essa separação frequentemente gerava falhas de comunicação, conflitos de prioridades e atrasos na entrega de software.
+
+O DevOps propõe a eliminação dessas barreiras por meio da adoção de processos colaborativos, objetivos compartilhados e ferramentas que permitem a automação de testes, implantações e monitoramento. Como resultado, as equipes passam a atuar de forma integrada durante todo o ciclo de vida da aplicação, compartilhando responsabilidades desde o desenvolvimento até a operação e a manutenção do sistema. Essa integração favorece entregas mais rápidas e confiáveis, reduz o número de falhas em produção e possibilita uma resposta mais ágil a incidentes e às necessidades do negócio.
+
+## Principais pontos
+
+- **Colaboração contínua:** promove a integração entre as equipes de desenvolvimento e operações durante todo o ciclo de vida do software.
+- **Redução de barreiras:** elimina a separação entre as equipes, diminuindo falhas de comunicação e conflitos de prioridades.
+- **Objetivos compartilhados:** desenvolvimento e operações passam a trabalhar em conjunto para entregar software com maior qualidade e estabilidade.
+- **Automação de processos:** utiliza ferramentas para automatizar testes, implantações e monitoramento.
+- **Responsabilidade compartilhada:** ambas as equipes participam desde o desenvolvimento até a manutenção da aplicação.
+- **Maior agilidade:** acelera a entrega de novas funcionalidades e atualizações.
+- **Maior confiabilidade:** reduz falhas em produção e melhora a disponibilidade dos sistemas.
+- **Resposta rápida a incidentes:** facilita a identificação e a resolução de problemas, minimizando impactos para os usuários.
+
+---
+
 ## 5. Como as Tecnologias Agregam Valor
 
 As ferramentas utilizadas no ecossistema DevOps permitem automatizar processos críticos, desde a integração de código até a implantação em produção. Isso reduz erros manuais, melhora a rastreabilidade das mudanças e aumenta a confiabilidade das entregas.
