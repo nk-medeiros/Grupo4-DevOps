@@ -74,9 +74,9 @@ O profissional de DevOps atua na resolução de problemas relacionados à integr
 
 Além disso, esse profissional busca minimizar problemas de comunicação entre equipes, que frequentemente resultam em retrabalho, atrasos e conflitos de responsabilidade. Para enfrentar essas dificuldades, o DevOps implementa práticas de automação, integração e entrega contínuas, monitoramento de aplicações e gerenciamento da infraestrutura como código, reduzindo a ocorrência de falhas humanas, aumentando a disponibilidade dos sistemas e permitindo que as atualizações sejam realizadas com maior frequência e menor risco. Dessa forma, seu trabalho está diretamente voltado para garantir maior agilidade, estabilidade e qualidade na entrega de software, alinhando as necessidades do negócio à eficiência operacional.
 
-# Como o DevOps resolve esses problemas
+## Como o DevOps resolve esses problemas
 
-## O DevOps utiliza práticas como:
+### O DevOps utiliza práticas como:
 
 - Integração Contínua (CI) para integrar alterações de código com frequência.
 - Entrega e Implantação Contínuas (CD) para automatizar a disponibilização de novas versões.
@@ -117,7 +117,7 @@ A automação é o coração do DevOps. A ideia é simples: tirar da frente aque
 
 No modelo antigo, quase tudo dependia de alguém para clicar num botão ou configurar uma máquina: compilar o código, rodar testes, subir servidores e monitorar o sistema. Isso deixava o trabalho lento e imprevisível. Com a automação, ferramentas e scripts cuidam do trabalho pesado e operacional, deixando a equipe livre para focar no que realmente importa: gerar valor para o produto.
 
-#### O que dá para automatizar?
+### O que dá para automatizar?
 - **Build (Compilação):** Gerar os arquivos executáveis do sistema de forma automática.
 - **Testes:** Rodar testes de qualidade a cada pequena alteração no código.
 - **Análise de Código:** Checar automaticamente se o código segue boas práticas e está seguro.
@@ -127,21 +127,8 @@ No modelo antigo, quase tudo dependia de alguém para clicar num botão ou confi
 
 **Principais ganhos:** Menos erros humanos, entregas muito mais rápidas, processos que sempre funcionam do mesmo jeito e um time focado em estratégia, não em apagar incêndios.
 
-### Entendendo o Ciclo DevOps
+---
 
-O DevOps não funciona como uma linha de produção tradicional que tem um fim. Ele funciona como um ciclo infinito e contínuo, que você pode visualizar assim:
-
-**Desenvolvimento → Build → Testes → Qualidade → Empacotamento → Deploy → Monitoramento → Feedback ↺ (e o ciclo recomeça)**
-
-#### Como a automação dá vida a esse ciclo?
-
-Imagine o seguinte cenário no dia a dia:
-
-O desenvolvedor termina uma melhoria e envia o código. A partir daí, a mágica acontece sozinha: o sistema compila o projeto, roda todos os testes, valida a qualidade e faz o deploy no servidor.
-
-Depois que o sistema está no ar, ferramentas monitoram o comportamento do software e a experiência do usuário. Esse **feedback** (dados de erros, performance e uso) volta direto para o time de desenvolvimento, que já usa essas informações para planejar os próximos passos.
-
-É esse ciclo automatizado e sem interrupções que permite colocar novas ideias no ar de forma rápida, segura e constante.
 ## 7. Integração Contínua (CI)
 
 ### O que é
